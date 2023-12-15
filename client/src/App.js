@@ -7,7 +7,7 @@ function App() {
     e.preventDefault();
     let formData = new FormData();
     formData.append("screenshot", file);
-    Axios.post("http://localhost:4000/", formData, {
+    Axios.post("https://1xfdu99kh7.execute-api.ap-south-1.amazonaws.com/prod/file-upload", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
