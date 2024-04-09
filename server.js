@@ -1,3 +1,15 @@
+require("appdynamics").profile({
+ controllerHostName: 'biker202404010308576.saas.appdynamics.com',
+ controllerPort: 443,
+ 
+ // If SSL, be sure to enable the next line
+ controllerSslEnabled: true,
+ accountName: 'biker202404010308576',
+ accountAccessKey: 'yfqryh715n2a',
+ applicationName: 'file-uploader',
+ tierName: 'uploader-tier',
+ nodeName: 'process' // The controller will automatically append the node name with a unique number
+});
 const express = require('express');
 const fileUpload = require('express-fileupload');
 
